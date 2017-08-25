@@ -317,6 +317,7 @@ h6, .h6 {
   }
 
 
+
 /*
   * parallax
   *
@@ -338,17 +339,17 @@ h6, .h6 {
 
 .pimg1 {
   background-image:url('../img/showcase-green.jpg');
-  min-height:600px;
+  min-height: 600px;
 }
 
 .pimg2 {
   background-image:url('../img/showcase-pink.png');
-  min-height:600px;
+  min-height: 300px;
 }
 
 .pimg3 {
   background-image:url('../img/showcase-blue.png');
-  min-height:600px;
+  min-height: 300px;
 }
 
 .section {
