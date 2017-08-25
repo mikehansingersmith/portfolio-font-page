@@ -222,7 +222,8 @@ h6, .h6 {
 /*--- SET FORM STYLE ---*/
 .form-wrapper {
   width: 400px;
-  margin: 50px 0 0 0;
+  float: right;
+  margin-top: 5px;
   font-size: 16px;
   border-radius: 0 10px 10px 0;
 }
@@ -233,32 +234,13 @@ h6, .h6 {
   margin-bottom: 0;
 }
 /* The triangle form is achieved by a CSS hack */
-.form-triangle {
-  width: 0;
-  margin-right: auto;
-  margin-left: auto;
-  border: 12px solid transparent;
-  border-bottom-color: #000;
-}
-.form-header {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 900;
-  font-size: 150%;
-  color: #fff;
-  background-color: #000;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px 10px 0 0;
-}
 .form-container {
   background: transparent;
   padding: 12px;
-  border: 1px solid #000;
-  border-radius: 0 0 10px 10px;
 }
 /* Every row inside .login-container is defined with p tags */
 .form-wrapper p {
-  padding: 12px;
+  padding: 5px;
 }
 /*
 .form-wrapper input {
@@ -316,12 +298,15 @@ h6, .h6 {
 
 footer {
   padding: 40px 0;
-  color: #999;
+  color: #aaa;
   text-align: center;
-  background-color: #fff;
+  background-color: #000;
 }
 footer p:last-child {
   margin-bottom: 0;
+}
+footer a {
+  color: #aaa;
 }
 
 /*
@@ -383,16 +368,10 @@ footer p:last-child {
   border: 1px solid #000000;
   color: #000000;
 }
-.form-control {
-  border-radius: 5px;
-  padding: 20px;
-}
 .btn-chur-contact {
   font-weight: 900;
-  width: 100%;
-  color: #000000;
-  background-color: #00aeff;
-  border: 1px solid #000000;
+  color: #fff;
+  background-color: #73dff4;
   transition: all 0.4s;
 }
 .btn-chur-contact:hover {
@@ -400,27 +379,48 @@ footer p:last-child {
   border: 1px solid #000000;
   color: #000000;
 }
+.form-control {
+  border-radius: 5px;
+  padding: 10px;
+}
+.btn-chur-contact {
+  font-weight: 900;
+  width: 100%;
+  color: #fff;
+  background-color: #00aeff;
+  border: 0;
+  transition: all 0.4s;
+}
+.btn-chur-contact:hover {
+  background-color: #fff849;
+  border: 0;
+  color: #000000;
+}
 /*
   * nzee row
   *
   */
-
-  .boxes{
-    text-align: center;
-    background: transparent;
-    margin-bottom: 30px;
-  }
-
-  .box .fa{
-    font-size:45px !important;
-    margin-bottom:10px;
-  }
-
-  .box {
-    padding:15px;
-
-  }
-
+.boxes{
+  text-align: center;
+  background: transparent;
+  margin-bottom: 30px;
+}
+.box .fa{
+  font-size:45px !important;
+  margin-bottom:10px;
+}
+.box {
+  padding:15px;
+}
+.box h1 {
+  border-bottom: 5px solid #00aeff;
+  margin-bottom: 35px;
+  padding-bottom: 35px;
+  color: #aaa;
+}
+.box p {
+  color: #aaa;
+}
 
 
 /*
@@ -428,7 +428,7 @@ footer p:last-child {
   *
   */
 
-.pimg1, .pimg2, .pimg3{
+.pimg1, .pimg2, .pimg3, .pimg4{
   position:relative;
   margin-top: 0;
   background-position:center;
@@ -448,12 +448,17 @@ footer p:last-child {
 }
 
 .pimg2 {
-  background-image:url('../img/showcase-pink.png');
+  background-image:url('../img/showcase-pink.jpg');
   min-height: 300px;
 }
 
 .pimg3 {
-  background-image:url('../img/showcase-blue.png');
+  background-image:url('../img/showcase-blue.jpg');
+  min-height: 300px;
+}
+
+.pimg4 {
+  background-image:url('../img/showcase-black.jpg');
   min-height: 300px;
 }
 
