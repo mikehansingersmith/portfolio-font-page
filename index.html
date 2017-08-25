@@ -1,3 +1,9 @@
+<?php
+  require_once 'helpers/security.php';
+  session_start();
+  $errors = isset($_SESSION['errors']) ? $_SESSION['errors'] : [];
+  $fields = isset($_SESSION['fields']) ? $_SESSION['fields'] : [];
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -145,11 +151,27 @@
       </div>
     </div>
 
-    <footer class="blog-footer">
-      <p>This site was built using <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://www.linkedin.com/in/michaelhansingersmith">@michaelhansingersmith</a>.</p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
+    <footer>
+      <div class="container">
+        <section class="boxes">
+          <div class="row">
+            <div class="col-md-6">
+              <p>This site was built using <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://www.linkedin.com/in/michaelhansingersmith">@michaelhansingersmith</a>.</p>
+            </div>
+            <div class="col-md-6">
+              <div class="form-wrapper">
+                <div class="form-triangle"></div>
+                <h2 class="form-header">contact @newzee</h2>
+                <form action="validate.php" method="post" class="form-container">
+                  <p><input type="text" placeholder="Name" name="name" autocomplete="off"></p>
+                  <p><input type="email" placeholder="Email" name="email" autocomplete="off"></p>
+                  <p><textarea placeholder="Message" name="message" rows="6"></textarea></p>
+                  <p><a class="btn btn-default btn-lg btn-chur-blue" href="#">&lt;send&gt;</a></p>
+                </form>
+              </div>
+            </div>
+          </div>
+        <section class="boxes">
     </footer>
 
 

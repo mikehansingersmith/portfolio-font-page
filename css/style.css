@@ -29,7 +29,7 @@ h6, .h6 {
 }
 
 .jumbotron {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .jumbotron .container h1 {
@@ -223,16 +223,107 @@ h6, .h6 {
  * Footer
  */
 
-.blog-footer {
+footer {
   padding: 40px 0;
   color: #999;
   text-align: center;
-  background-color: #333;
+  background-color: #fff;
 }
-.blog-footer p:last-child {
+footer p:last-child {
   margin-bottom: 0;
 }
 
+/*--- SET FORM STYLE ---*/
+.form-wrapper {
+  width: 400px;
+  margin: 90px 60px 0 150px;
+  font-size: 16px;
+  border-radius: 0 10px 10px 0;
+}
+/* Reset top and bottom margins from certain elements */
+.form-header,
+.form-wrapper p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* The triangle form is achieved by a CSS hack */
+.form-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: #000;
+}
+.form-header {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-size: 150%;
+  color: #fff;
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+.form-container {
+  background: #fff;
+  padding: 12px;
+  border: 1px dashed #000;
+  border-radius: 0 0 10px 10px;
+}
+/* Every row inside .login-container is defined with p tags */
+.form-wrapper p {
+  padding: 12px;
+}
+.form-wrapper input {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+  font-weight: 900;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+.form-wrapper textarea {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;c0;
+}
+.form-wrapper input[type="email"],
+.form-wrapper input[type=text], .form-wrapper textarea {
+  background-color: #fff;
+  border-color: #1c1c1c;
+  color: #555;
+  transition: all 0.3s;
+}
+/* Text fields' focus effect */
+.form-wrapper input[type="email"]:hover,
+.form-wrapper input[type=text]:hover,
+.form-wrapper textarea:hover {
+  background-color: #dbffe2;
+	border-left: 5px solid #1263ac;
+
+}
+/* Text fields' focus effect */
+.form-wrapper input[type="email"]:focus,
+.form-wrapper input[type=text]:focus,
+.form-wrapper textarea:focus {
+  background-color: #dbffe2;
+	border-left: 5px solid #1263ac;
+}
 
 
 /*
@@ -294,7 +385,6 @@ h6, .h6 {
   border: 1px solid #000000;
   color: #000000;
 }
-
 /*
   * nzee row
   *
