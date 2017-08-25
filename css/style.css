@@ -219,24 +219,10 @@ h6, .h6 {
 }
 
 
-/*
- * Footer
- */
-
-footer {
-  padding: 40px 0;
-  color: #999;
-  text-align: center;
-  background-color: #fff;
-}
-footer p:last-child {
-  margin-bottom: 0;
-}
-
 /*--- SET FORM STYLE ---*/
 .form-wrapper {
   width: 400px;
-  margin: 90px 60px 0 150px;
+  margin: 50px 0 0 0;
   font-size: 16px;
   border-radius: 0 10px 10px 0;
 }
@@ -265,15 +251,16 @@ footer p:last-child {
   border-radius: 10px 10px 0 0;
 }
 .form-container {
-  background: #fff;
+  background: transparent;
   padding: 12px;
-  border: 1px dashed #000;
+  border: 1px solid #000;
   border-radius: 0 0 10px 10px;
 }
 /* Every row inside .login-container is defined with p tags */
 .form-wrapper p {
   padding: 12px;
 }
+/*
 .form-wrapper input {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
@@ -288,6 +275,7 @@ footer p:last-child {
   font-family: inherit;
   font-size: 0.95em;
 }
+
 .form-wrapper textarea {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
@@ -302,11 +290,9 @@ footer p:last-child {
   font-family: inherit;
   font-size: 0.95em;c0;
 }
+*/
 .form-wrapper input[type="email"],
 .form-wrapper input[type=text], .form-wrapper textarea {
-  background-color: #fff;
-  border-color: #1c1c1c;
-  color: #555;
   transition: all 0.3s;
 }
 /* Text fields' focus effect */
@@ -315,7 +301,6 @@ footer p:last-child {
 .form-wrapper textarea:hover {
   background-color: #dbffe2;
 	border-left: 5px solid #1263ac;
-
 }
 /* Text fields' focus effect */
 .form-wrapper input[type="email"]:focus,
@@ -325,6 +310,19 @@ footer p:last-child {
 	border-left: 5px solid #1263ac;
 }
 
+/*
+ * Footer
+ */
+
+footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #fff;
+}
+footer p:last-child {
+  margin-bottom: 0;
+}
 
 /*
   * Custom Styles
@@ -381,6 +379,23 @@ footer p:last-child {
   transition: all 0.4s;
 }
 .btn-chur-blue:hover {
+  background-color: #fff849;
+  border: 1px solid #000000;
+  color: #000000;
+}
+.form-control {
+  border-radius: 5px;
+  padding: 20px;
+}
+.btn-chur-contact {
+  font-weight: 900;
+  width: 100%;
+  color: #000000;
+  background-color: #00aeff;
+  border: 1px solid #000000;
+  transition: all 0.4s;
+}
+.btn-chur-contact:hover {
   background-color: #fff849;
   border: 1px solid #000000;
   color: #000000;
